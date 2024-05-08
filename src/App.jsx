@@ -10,7 +10,7 @@ function App() {
     expectedSustainabilityPeriod: "",
     priceBookValueRatio: "",
   });
-  const [selectedTopic, setSelectedTopic] = useState();
+  const [selectedTopic, setSelectedTopic] = useState("PBR");
 
   function handleChange(inputIdentifier, newValue) {
     setUserInput((prevUserInput) => {
@@ -55,7 +55,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header selectedTopic={selectedTopic} />
       <main>
         <section id="examples">
           <menu>
