@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(50, 50, 50);
+  color: #e1eeeb;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 100%;
+  width: 30rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+#examples {
+  width: 100%; /* 부모 요소에 맞게 너비 설정 */
+  margin-bottom: auto; /* 아래 여백을 최대한 확보하여 높이를 조절 */
+}
+
+#examples menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+#examples menu button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: transparent;  
+  color: #ede6e6;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#examples menu button:hover {
+  background-color: #805d5d;
+  color: #ebe7ef;
+}
+
+#examples menu button.active {
+  background-color: #804545;
+  color: #ebe7ef;
+}
+#examples menu button:not(.active) {
+  /* 비활성화된 상태의 배경색 및 글자색 설정 */
+  background-color: #82726d;
+  color: #3a2929;
+}

@@ -1,0 +1,66 @@
+#user-input {
+  padding: 1rem;
+  width: 30rem;
+  margin: 0 auto;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #bdc0ba, #a5a8a3);
+  color: #3a2929;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
+
+#user-input label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#user-input input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #000000;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: #e1eeeb;
+  font-size: 1rem;
+}
+
+div .buttonArray {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: #3a2929;
+  color: #c2e9e0;
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+}
+
+.buttonAlt {
+  font-family: "Quicksand", sans-serif;
+  border: none;
+  background: #3a2929;
+  color: #c2e9e0;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4e2626;
+}
+
+.buttonAlt:hover {
+  background: black;
+  color: #91e1d0;
+}

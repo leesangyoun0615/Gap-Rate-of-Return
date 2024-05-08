@@ -1,0 +1,51 @@
+#header {
+  text-align: center;
+  margin: 1.5rem auto 5rem auto;
+}
+
+#header img {
+  margin: 20rem 0, 0, 0;
+  padding: 0;
+  max-width: 15rem;
+  align-items: center;
+  filter: brightness(0.85);
+  border-radius: 2rem;
+}
+
+#header h1 {
+  font-family: "Quicksand", sans-serif;
+  color: #e1eeeb;
+  font-size: 2rem;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.text-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(
+    100% - 0.2rem
+  ); /* 좌우 여백을 제외한 컨테이너의 너비를 설정합니다. */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 2rem; /* 상하 10px, 좌우 2rem의 여백을 설정합니다. */
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  white-space: normal;
+  pointer-events: none; /* 호버되었을 때 텍스트에 이벤트가 발생하지 않도록 설정합니다. */
+}
+
+.image-container:hover .text-container {
+  opacity: 1;
+  pointer-events: auto; /* 호버되었을 때 텍스트에 이벤트를 다시 활성화합니다. */
+}
